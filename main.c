@@ -7,7 +7,7 @@ clock_t last_ticks = 0;
 char src_str[10] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'};
 int test_loop(char* src)
 {
-    char des[10];
+    volatile char des[10];
     memcpy(des, src, 10);
     printf("%c\n", des[3]);
 }

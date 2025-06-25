@@ -2,7 +2,7 @@
 CC = gcc
 
 # Define compiler flags
-CFLAGS = -Wall -Wextra -std=c99
+CFLAGS = -Wall -Wextra -std=c99 -fno-builtin-memcpy
 
 # Define the target executable
 TARGET = program
